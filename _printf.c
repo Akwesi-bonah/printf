@@ -10,8 +10,12 @@ int _printf(const char * const format, ...)
 {
 	select_match match[] = {
 		{"%c", print_char}, {"%s", print_string},
+<<<<<<< HEAD
 		{"%%", print_cent}, {"%S", print_string_ex},
 		{"%u", print_unsigned_int}
+=======
+		{"%%", print_cent}, {"%r", print_strrev}
+>>>>>>> george
 	};
 
 	va_list arg;
