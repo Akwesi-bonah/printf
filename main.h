@@ -23,5 +23,6 @@ int print_char(va_list arg);
 int print_string(va_list arg);
 int print_cent(void);
 int _printf(const char * const format, ...);
+int print_strrev(va_list arg);
 
 #endif

@@ -10,7 +10,7 @@ int _printf(const char * const format, ...)
 {
 	select_match match[] = {
 		{"%c", print_char}, {"%s", print_string},
-		{"%%", print_cent}
+		{"%%", print_cent}, {"%r", print_strrev}
 	};
 
 	va_list arg;
