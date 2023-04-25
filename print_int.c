@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_int - prints integer
+ * print_int - a function that prints integer
  * @arg: argument to print
- * Return: lenght of characters
+ * Return: length of characters
  */
 int print_int(va_list arg)
 {
