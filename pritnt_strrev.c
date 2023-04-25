@@ -6,9 +6,9 @@
  * Return: the string
  */
 
-int print_strrev(va_list arg) 
+int print_strrev(va_list arg)
 {
-  char *str = va_arg(arg, char*);
+	char *str = va_arg(arg, char*);
 	int i;
 	int j = 0;
 

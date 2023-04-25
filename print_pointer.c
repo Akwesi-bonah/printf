@@ -1,8 +1,14 @@
 #include "main.h"
+/**
+ * print_pointer - print address
+ * @arg: argument
+ *
+ * Return: lenght
+ */
 
 int print_pointer(va_list arg)
 {
-   	void *ptr;
+	void *ptr;
 	char *str = "(nil)";
 	long int a;
 	int b, i;
@@ -10,6 +16,7 @@ int print_pointer(va_list arg)
 	ptr = va_arg(arg, void*);
 	if (ptr == NULL)
 	{
+
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);

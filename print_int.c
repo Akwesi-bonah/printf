@@ -2,14 +2,15 @@
 /**
  * print_int - a function that prints an integer
  * @args: the argument to print
- * Return: lenght of characters
+ * Return: lenghth of characters
  */
 int print_int(va_list arg)
 {
 	int val = va_arg(arg, int);
 	int num, end = val % 10, digit;
 	int  i = 1, exp = 1;
-	val /= 10;
+
+	val = val / 10;
 	num = val;
 
 	if (end < 0)
@@ -41,3 +42,4 @@ int print_int(va_list arg)
 
 	return (i);
 }
+
