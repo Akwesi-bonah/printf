@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _putchar - prints out a character
- * @c: character to print
+ * _putchar - ouput a single character
+ * @c: character to be printed
  *
- * Return:  1 else -1
+ * Return: 1
  */
 
 int _putchar(char c)
