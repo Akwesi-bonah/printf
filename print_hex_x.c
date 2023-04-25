@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_hex_x - prints value in hexdecimal number
+ * print_hex_x - a function that prints value in hexdecimal number
  * @num: argument passed
  *
  * Return: result
