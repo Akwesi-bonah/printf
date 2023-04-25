@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_bin- print a binary number
+ * print_bin - print a binary number
  * @arg: argument passed
  * Return: 1
 */
