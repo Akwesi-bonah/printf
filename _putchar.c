@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _putchar - print out a character
+ * _putchar - prints out a character
  * @c: character to print
  *
  * Return:  1 else -1
