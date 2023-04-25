@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_oct - printa numner in octal
- * @arg: argument
+ * print_oct - a function that prints numner in octal
+ * @arg: argument passed
  * Return: count
 */
 
