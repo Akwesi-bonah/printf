@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printf - select correct output to print
+ * _printf - a function that selects correct output to print
  * @formant: identifier
  * 
  * Return: string lenght
