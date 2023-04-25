@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_pointer - print address
+ * print_pointer - a function that print address
  * @arg: argument
  *
- * Return: lenght
+ * Return: length 
  */
 
 int print_pointer(va_list arg)
