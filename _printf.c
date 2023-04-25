@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _printf - select correct format to print
- * @format: identifier
- *
- * Return: lenght
- */
+ * _printf - a function that selects correct output to print
+ * @formant: identifier
+ * 
+ * Return: string lenghth
+*/
 
 int _printf(const char * const format, ...)
 {

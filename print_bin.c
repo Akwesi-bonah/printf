@@ -1,7 +1,11 @@
 #include "main.h"
 /**
  * print_bin - print a binary number
+<<<<<<< HEAD
+ * @arg: the argument passed
+=======
  * @arg: arguments passed
+>>>>>>> 6dfd6fa63e6402e78521504f95ee060f87c54400
  * Return: 1
 */
 int print_bin(va_list arg)
