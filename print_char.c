@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_char - print a character to stdout
+ * print_char - a function that prints a character to stdout
  * @arg: argument passed
  *
  * Return: 1
