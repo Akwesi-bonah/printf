@@ -9,13 +9,13 @@
 int _printf(const char * const format, ...)
 {
 	select_match match[] = {
-		{"%%", print_cent}, {"%c", print_char},
-		{"%s", print_string}, {"%d", print_dec},
-		{"%i", print_int}, {"%b", print_bin},
-		{"%o", print_oct}, {"%u", print_unsigned},
-		{"%R", print_rot13}, {"%x", print_hex},
-		{"%X", print_hex_x}, {"%S", print_string_ex},
-		{"%p", print_point}
+		{"%s", print_string}, {"%c", print_char},
+		{"%%", print_cent},{"%d", print_dec},
+		{"%i", print_int},{"%x", print_hex},
+		{"%r", print_strrev},{"%b", print_bin},
+		{"%R", print_rot13},{"%u", print_unsigned_int},
+		{"%o", print_oct},{"%X", print_hex_c},
+		{"%S", print_string_ex}, {"%p", print_pointer}
 	};
 	va_list arg;
 	int i = 0, j;

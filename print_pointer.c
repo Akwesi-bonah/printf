@@ -8,6 +8,7 @@
 
 int print_pointer(va_list arg)
 {
+
 	void *ptr;
 	char *str = "(nil)";
 	long int a;

@@ -6,32 +6,32 @@
 */
 int print_bin(va_list arg)
 {
-    int i, hold, count = 0;
-    int a = 1, flag;
-    unsigned int num = va_arg(arg, unsigned int);
-    unsigned int ptr;
-    
-    i = 0;
+	int flag = 0;
+	int hold = 0;
+	int i, a = 1, b;
+	unsigned int num = va_arg(arg, unsigned int);
+	unsigned int ptr;
 
-    while (i < 32)
+	for (i = 0; i < 32; i++)
 	{
 		ptr = ((a << (31 - i)) & num);
+
 		if (ptr >> (31 - i))
 		{
 			flag = 1;
 		}
 		if (flag)
 		{
-			hold = ptr >> (31 - i);
-			_putchar(hold + 48);
-			count++;
+			b = ptr >> (31 - i);
+			_putchar(b + 48);
+			hold++;
 		}
-		i++;
 	}
 
-    if (count == 0) {
-        _putchar('0');
-	count++;
-    }
-   return count;
+	if (hold == 0)
+	{
+		hold++;
+		_putchar('0');
+	}
+	return (hold);
 }

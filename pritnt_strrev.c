@@ -13,10 +13,16 @@ int print_strrev(va_list arg)
 	int j = 0;
 
 	if (str == NULL)
+	{
 		str = "(null)";
+	}
+
 	while (str[j] != '\0')
 		j++;
+
 	for (i = j - 1; i >= 0; i--)
+	{
 		_putchar(str[i]);
+	}
 	return (j);
 }

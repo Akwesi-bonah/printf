@@ -2,7 +2,7 @@
 /**
  * print_string_ex - print exclusives string.
  * @arg: argument passed
- * 
+ *
  * Return: lenght of string
 */
 

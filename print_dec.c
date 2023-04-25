@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * print_dec - print decimal values
- : @arg: argument to print
+ * @arg: argument to print
  * Return: lenght of characters
  */
 
-int print_dec(va_list args)
+int print_dec(va_list arg)
 {
-	int n = va_arg(args, int);
+	int n = va_arg(arg, int);
 	int num, last = n % 10, digit;
 	int  i = 1;
 	int exp = 1;
