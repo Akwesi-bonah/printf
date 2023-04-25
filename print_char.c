@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_char - print a character to stdout
- * @arg: argument passed
+ * @arg: the argument passed
  * 
  * Return: 1 at success
 */
