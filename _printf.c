@@ -3,7 +3,7 @@
  * _printf - select correct output to print
  * @formant: identifier
  * 
- * Return: string lenght
+ * Return: string lenghth
 */
 
 int _printf(const char * const format, ...)
