@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_bin - print a binary number
- * @arg: argument passed
+ * @arg: the argument passed
  * Return: 1
 */
 int print_bin(va_list arg)
