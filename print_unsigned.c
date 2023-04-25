@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_unsigned_int - print poisitve integer
- * arg: argument passed
+ * arg: the argument passed
  * 
  * Return: character count
 */
