@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * print_cent - print "%"
- * Return: 1
+ * print_cent - prints the char "%".
+ * Return: 1.
  */
-
 int print_cent(void)
 {
 	_putchar(37);
