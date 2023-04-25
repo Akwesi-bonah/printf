@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_unsigned_int - print poisitve integer
+ * print_unsigned_int - a function that prints poisitve integer
  * arg: argument passed
  * 
  * Return: character count

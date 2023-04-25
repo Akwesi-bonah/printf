@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_oct - printa numner in octal
+ * print_oct - a function that prints numbers in octal
  * @arg: argument
  * 
  * Return: count
