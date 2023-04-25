@@ -1,17 +1,19 @@
 #include "main.h"
 /**
+<<<<<<< HEAD
  * print_hex - a function that prints value in hexdecimal number
+=======
+ * print_hex_c - prints value in hexdecimal number
+>>>>>>> 6dfd6fa63e6402e78521504f95ee060f87c54400
  * @arg: argument passed
  * 
  * Return: result
 */
 
-int print_hex_c(va_list arg)
+int print_hex_c(unsigned int num)
 {
     int i, count = 0;
     int *arr;
-
-    unsigned int num = va_arg(arg, unsigned int);
     unsigned int temp = num;
 
     while (num / 16 != 0)
@@ -19,6 +21,7 @@ int print_hex_c(va_list arg)
         num /= 16;
         count++;
     }
+
     count++;
     arr = malloc(sizeof(int) * (count));
 

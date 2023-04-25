@@ -37,4 +37,4 @@ int print_string(va_list arg);
 int print_unsigned_int(va_list arg);
 int _strlen(char *s);
 int _strlenc(const char *s);
-#endif
+#endif MAIN_H

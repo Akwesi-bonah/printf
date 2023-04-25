@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_strrev - function that reverse a string
+ * print_strrev - a function that reverse a string
  * @arg: string location
  *
  * Return: the string
@@ -13,7 +13,7 @@ int print_strrev(va_list arg)
 	int j = 0;
 
 	if (str == NULL)
-		str = "(nil)";
+		str = "(null)";
 	while (str[j] != '\0')
 		j++;
 	for (i = j - 1; i >= 0; i--)

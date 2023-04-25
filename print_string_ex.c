@@ -35,7 +35,7 @@ int print_string_ex(va_list arg)
                 len++;
             }
 
-            len += print_hex_x(cat);
+            len += print_hex_c(cat);
         }
         
         _putchar(str[i]);

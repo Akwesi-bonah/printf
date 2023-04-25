@@ -32,11 +32,15 @@ int print_hex_x(unsigned int num)
 	while ( i >= 0)
 	{
 		if (arr[i] > 9)
+		{
 			arr[i] += 39;
+		}
 		_putchar(arr[i] + '0');
 		i--;
 	}
 
 	free(arr);
 	return (count);
-} 
+}
+
+

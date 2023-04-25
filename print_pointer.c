@@ -2,27 +2,24 @@
 
 int print_pointer(va_list arg)
 {
-    char *str = "(nil)";
-    void *ptr;
-    long int a;
-    int i, b;
+   	void *ptr;
+	char *str = "(nil)";
+	long int a;
+	int b, i;
 
-    ptr = va_arg(arg, void*);
-    i = 0;
-    if (ptr == NULL)
-    {
-        while(str[i] != '\0')
-        {
-            _putchar(str[i]);
-            i++;
-        }
+	ptr = va_arg(arg, void*);
+	if (ptr == NULL)
+	{
+		for (i = 0; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
+		return (i);
+	}
 
-        return (i);
-    }
-
-    a  = (unsigned long int)ptr;
-    _putchar('0');
-    _putchar('x');
-    b = print_hex_x(a);
-    return (b + 2);
+	a = (unsigned long int)ptr;
+	_putchar('0');
+	_putchar('x');
+	b = print_hex_x(a);
+	return (b + 2);
 }

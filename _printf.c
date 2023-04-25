@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printf - select correct output to print
+ * _printf - a function that selects correct output to print
  * @formant: identifier
  * 
  * Return: string lenghth
@@ -17,7 +17,6 @@ int _printf(const char * const format, ...)
 	{"%o", print_oct},{"%X", print_hex_c},
 	{"%S", print_string_ex}, {"%p", print_pointer}
 	};
-
     va_list args;
 	int i = 0, j, len = 0;
 
