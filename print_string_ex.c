@@ -3,7 +3,7 @@
  * print_string_ex - print exclusives string.
  * @arg: argument passed
  *
- * Return: lenght of string
+ * Return: length of string
 */
 
 int print_string_ex(va_list arg)
