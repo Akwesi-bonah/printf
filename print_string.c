@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * print_string - output string
- * @arg: argument passed
+ * @arg: the argument passed
  *
- * Return: lenght
+ * Return: lenghth
  */
 
 int print_string(va_list arg)
