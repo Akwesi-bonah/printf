@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * print_oct - a function that prints numner in octal
+ * print_oct - print octal numbers
  * @arg: argument passed
  * Return: count
-*/
-
+ */
 int print_oct(va_list arg)
 {
 	int i;
@@ -19,6 +18,7 @@ int print_oct(va_list arg)
 		count++;
 	}
 	count++;
+
 	arr = malloc(count * sizeof(int));
 
 	for (i = 0; i < count; i++)
@@ -26,10 +26,12 @@ int print_oct(va_list arg)
 		arr[i] = temp % 8;
 		temp /= 8;
 	}
-	for (i = count - 1; i >= 0; i--)
+
+	for ((i = count - 1); i >= 0; i--)
 	{
 		_putchar(arr[i] + '0');
 	}
+
 	free(arr);
 	return (count);
 }

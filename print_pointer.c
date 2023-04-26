@@ -3,21 +3,20 @@
  * print_pointer - a function that print address
  * @arg: argument
  *
- * Return: length 
+ * Return: length
  */
 
 int print_pointer(va_list arg)
 {
-
 	void *ptr;
 	char *str = "(nil)";
 	long int a;
-	int b, i;
+	int b;
+	int i;
 
 	ptr = va_arg(arg, void*);
 	if (ptr == NULL)
 	{
-
 		for (i = 0; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);

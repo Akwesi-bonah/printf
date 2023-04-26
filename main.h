@@ -5,6 +5,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
 
 /**
  * struct match - specify print function
@@ -23,7 +24,7 @@ int print_bin(va_list arg);
 int print_cent(void);
 int print_char(va_list arg);
 int _printf(const char * const format, ...);
-int print_hex_x(unsigned int num);
+int print_hex_x(unsigned long int num);
 int print_hex(va_list arg);
 int print_oct(va_list arg);
 int print_hex_c(va_list arg);

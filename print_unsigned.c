@@ -6,22 +6,21 @@
  *
  * Return: character count
 */
-
 int print_unsigned_int(va_list arg)
 {
-	unsigned int val = va_arg(arg, unsigned int);
-	int num, end = val % 10, digit, exp = 1;
+	unsigned int n = va_arg(arg, unsigned int);
+	int num, last = n % 10, digit, exp = 1;
 	int  i = 1;
 
-	val = val / 10;
-	num = val;
+	n = n / 10;
+	num = n;
 
-	if (end < 0)
+	if (last < 0)
 	{
 		_putchar('-');
 		num = -num;
-		val = -val;
-		end = -end;
+		n = -n;
+		last = -last;
 		i++;
 	}
 	if (num > 0)
@@ -31,7 +30,7 @@ int print_unsigned_int(va_list arg)
 			exp = exp * 10;
 			num = num / 10;
 		}
-		num = val;
+		num = n;
 		while (exp > 0)
 		{
 			digit = num / exp;
@@ -41,7 +40,7 @@ int print_unsigned_int(va_list arg)
 			i++;
 		}
 	}
-	_putchar(end + '0');
+	_putchar(last + '0');
 
 	return (i);
 }
