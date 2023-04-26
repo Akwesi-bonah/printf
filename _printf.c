@@ -10,11 +10,11 @@ int _printf(const char * const format, ...)
 {
 	select_match match[] = {
 		{"%s", print_string}, {"%c", print_char},
-		{"%%", print_cent},{"%d", print_dec},
-		{"%i", print_int},{"%x", print_hex},
-		{"%r", print_strrev},{"%b", print_bin},
-		{"%R", print_rot13},{"%u", print_unsigned_int},
-		{"%o", print_oct},{"%X", print_hex_c},
+		{"%%", print_cent}, {"%d", print_dec},
+		{"%i", print_int}, {"%x", print_hex},
+		{"%r", print_strrev}, {"%b", print_bin},
+		{"%R", print_rot13}, {"%u", print_unsigned_int},
+		{"%o", print_oct}, {"%X", print_hex_c},
 		{"%S", print_string_ex}, {"%p", print_pointer}
 	};
 	va_list arg;
