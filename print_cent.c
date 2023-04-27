@@ -1,12 +1,11 @@
 #include "main.h"
 /**
- * print_cent - print the character "%" (37)
- *
+ * print_cent - print "%"
  * Return: 1
  */
 
 int print_cent(void)
 {
-	_putchar('%');
+	_putchar(37);
 	return (1);
 }

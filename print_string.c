@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdlib.h>
 /**
- * print_string - print a string
- * @arg: argument passed
+ * print_string - output string
+ * @arg: the argument passed
  *
- * Return: string lenght
+ * Return: lenghth
  */
 
 int print_string(va_list arg)
@@ -12,31 +11,17 @@ int print_string(va_list arg)
 	char *str;
 	int i, len;
 
-	len = 0;
 	str = va_arg(arg, char *);
 	if (str == NULL)
 	{
-		str == "(nil)";
+		str = "(null)";
 		len = _strlen(str);
-		i = 0;
-
-		while (i < len)
-		{
+		for (i = 0; i < len; i++)
 			_putchar(str[i]);
-			i++;
-			return (len);
-		}
+		return (len);
 	}
-	else
-	{
-		len = _strlen(str);
-		i = 0;
-
-		while (i < len)
-		{
-			_putchar(str[i]);
-			i++;
-			return (len);
-		}
-	}
+	len = _strlen(str);
+	for (i = 0; i < len; i++)
+		_putchar(str[i]);
+	return (len);
 }
