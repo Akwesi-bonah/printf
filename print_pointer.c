@@ -8,25 +8,14 @@
 
 int print_pointer(va_list arg)
 {
-	void *ptr;
-	char *str = "(nil)";
-	long int a;
-	int b;
-	int i;
+	void *ptr; va_arg(arg, void*);
 
-	ptr = va_arg(arg, void*);
 	if (ptr == NULL)
 	{
-		for (i = 0; str[i] != '\0'; i++)
-		{
-			_putchar(str[i]);
-		}
-		return (i);
+		return (_printf("(null"));
 	}
 
-	a = (unsigned long int)ptr;
-	_putchar('0');
-	_putchar('x');
-	b = print_hex_x(a);
-	return (b + 2);
+	unsigned long int a = (unsigned long int)ptr;
+	
+	return (_printf("0x%lx", a));
 }
