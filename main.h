@@ -15,7 +15,7 @@
 
 typedef struct match
 {
-	char sym[];
+	char sym[2];
 	int (*func)();
 } select_match;
 
