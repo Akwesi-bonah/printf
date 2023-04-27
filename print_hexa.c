@@ -6,29 +6,18 @@
  */
 int print_hex_x(unsigned long int num)
 {
-	if (num == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
-
 	long int i;
 	long int *arr;
 	long int count = 0;
 	unsigned long int temp = num;
 
-	while (temp != 0)
+	while (num / 16 != 0)
 	{
-		temp /= 16;
+		num /= 16;
 		count++;
 	}
-
+	count++;
 	arr = malloc(count * sizeof(long int));
-	
-	if (arr == NULL)
-		return (-1);
-
-	temp = num;
 
 	for (i = 0; i < count; i++)
 	{
@@ -38,9 +27,8 @@ int print_hex_x(unsigned long int num)
 	for (i = count - 1; i >= 0; i--)
 	{
 		if (arr[i] > 9)
-			_putchar(arr[i] + '0');
-		else
-			_putchar(arr[i] - 10 + 'a');
+			arr[i] = arr[i] + 39;
+		_putchar(arr[i] + '0');
 	}
 	free(arr);
 	return (count);

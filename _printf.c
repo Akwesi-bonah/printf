@@ -10,11 +10,11 @@ int _printf(const char * const format, ...)
 {
 	select_match match[] = {
 		{"%s", print_string}, {"%c", print_char},
-		{"%%", print_cent}, {"%d", print_dec},
-		{"%i", print_int}, {"%x", print_hex},
-		{"%r", print_strrev}, {"%b", print_bin},
-		{"%R", print_rot13}, {"%u", print_unsigned_int},
-		{"%o", print_oct}, {"%X", print_hex_c},
+		{"%%", print_cent},{"%d", print_dec},
+		{"%i", print_int},{"%x", print_hex},
+		{"%r", print_strrev},{"%b", print_bin},
+		{"%R", print_rot13},{"%u", print_unsigned_int},
+		{"%o", print_oct},{"%X", print_hex_c},
 		{"%S", print_string_ex}, {"%p", print_pointer}
 	};
 	va_list arg;
@@ -26,8 +26,8 @@ int _printf(const char * const format, ...)
 		return (-1);
 	while (format[i] != '\0')
 	{
-		int num = sizeof(match) / sizeof(select_match);
-		for (j = 0;  j < num; j++)
+		j = 13;
+		while (j >= 0)
 		{
 			if (match[j].sym[0] == format[i] && match[j].sym[1] == format[i + 1])
 			{
@@ -37,12 +37,14 @@ int _printf(const char * const format, ...)
 			}
 			j--;
 		}
-		if (j >= num)
+		if (j < 0)
 		{
 			_putchar(format[i]);
 			len++;
 			i++;
 		}
+		else if (format[i] == '\0')
+			break;
 	}
 	va_end(arg);
 	return (len);
