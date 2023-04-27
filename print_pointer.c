@@ -17,5 +17,5 @@ int print_pointer(va_list arg)
 
 	unsigned long int a = (unsigned long int)ptr;
 	
-	return (_printf("0x%lx", a);
+	return (_printf("0x%lx", a));
 }
